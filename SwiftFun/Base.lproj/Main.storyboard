@@ -31,18 +31,48 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBJ-Fu-36S"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Be-LZ-EFv">
+                                <rect key="frame" x="110.5" y="233.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="L8o-RO-KGQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWt-kF-hrx">
+                                <rect key="frame" x="110.5" y="193.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eDd-80-aVk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWa-5a-tfc">
+                                <rect key="frame" x="136" y="149" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dWt-kF-hrx" firstAttribute="top" secondItem="vWa-5a-tfc" secondAttribute="bottom" constant="13.5" id="5OC-tR-BpW"/>
                             <constraint firstItem="Ixe-aP-azo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DKz-TK-kUZ"/>
+                            <constraint firstItem="7Be-LZ-EFv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQd-ZF-NK0"/>
+                            <constraint firstItem="vWa-5a-tfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XNL-re-b4j"/>
                             <constraint firstItem="Ixe-aP-azo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z1U-GT-Nx3"/>
+                            <constraint firstItem="dWt-kF-hrx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dUY-qr-OP6"/>
+                            <constraint firstItem="Ixe-aP-azo" firstAttribute="top" secondItem="7Be-LZ-EFv" secondAttribute="bottom" constant="10" id="i1X-4i-9ea"/>
+                            <constraint firstItem="Ixe-aP-azo" firstAttribute="top" secondItem="dWt-kF-hrx" secondAttribute="bottom" constant="50" id="kxS-uf-TTe"/>
                             <constraint firstItem="Fqj-dc-UxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="trT-4B-wxu"/>
                             <constraint firstItem="Fqj-dc-UxD" firstAttribute="top" secondItem="Ixe-aP-azo" secondAttribute="bottom" constant="10" id="uGS-42-ypo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="vWa-5a-tfc" id="5Jh-Hw-Cul"/>
+                        <outlet property="buttonTextField" destination="7Be-LZ-EFv" id="EK4-Tu-DkV"/>
                         <outlet property="myLabel" destination="Ixe-aP-azo" id="yX7-LV-2RZ"/>
+                        <outlet property="topTextField" destination="dWt-kF-hrx" id="iZn-vX-kdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
