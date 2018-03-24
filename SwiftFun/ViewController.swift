@@ -17,6 +17,7 @@ var buttonCount = 0
         buttonCount = buttonCount + 1
         
         print(buttonCount)
+        print(buttonCount)
         
         
         if buttonCount >= 10 {
