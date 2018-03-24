@@ -3,8 +3,8 @@
 //  SwiftFun
 //
 //  Created by Kuang Yao Chang on 2018/3/23.
-//  Copyright © 2018年 Kuang Yao Chang. All rights reserved.
-//
+//  Copyright © 2018年 Kuang Yao Chang. All rights reserved...
+//..
 
 import UIKit
 
@@ -16,6 +16,7 @@ var buttonCount = 0
         buttonCount = buttonCount + 1
         
         print(buttonCount)
+        
         
         if buttonCount >= 10 {
             view.backgroundColor = UIColor.red
